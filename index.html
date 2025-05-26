@@ -17,19 +17,62 @@
             margin:10px;
         }
         header {
-            color: white;
+            color: #364f6b;
             padding: 30px 20px;
-            border-bottom: 1px solid #ccc;
+            position: sticky;
+            z-index: 1000;
         }
         nav {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
         ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
+        }
+        .search{
+            background-color:#0000000c;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            width: 30vw;
+            height:6vh;
+            border-radius: 50px;
+            margin-left: 17vw;
+            margin-right: 8vw;
+            transition: background-color 0.3s ease;
+        }
+        .search:hover {
+            background-color: #00000033;
+        }
+        .search-icon {
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right: #364f6b 1px solid;
+        }
+        table {
+            text-align: center;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            text-decoration: none;
+            color: #364f6b;
+        }
+        .content{
+            height:83vh;
+            width:99%;
+            background-color: #f0f0f0;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;;
         }
     </style>
 </head>
@@ -38,11 +81,41 @@
         <nav>
             <ul>
                 <li><a href="index.html" class="logo"><img src="images/logo.png" height="50px"></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="search">
+                    <img src="images/search.png" alt="Search Icon" height="20px" class="search-icon">
+                    <input type="text" placeholder="Search for cakes, flavours and more..." style="border: none; background: transparent; outline: none; width: 100%; display:flex; align-items: center;">
+                </li>
+                <li>
+                    <a href="trackorder.html" class="icons">
+                        <table>
+                            <tr><td><img src="images/trackorder.png" alt="Track Order Icon" height="25px" style="margin-right: 30px; padding-left: 30px;"></td></tr>
+                            <tr><td>Track Order</td></tr>
+                        </table>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html" class="icons">
+                        <table>
+                            <tr><td><img src="images/cart.png" alt="Cart Icon" height="25px" style="margin-right: 30px; padding-left: 30px;"></td></tr>
+                            <tr><td>Cart</td></tr>
+                        </table>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="icons">
+                        <table>
+                            <tr><td><img src="images/profile.png" alt="Profile Icon" height="25px" style="margin-right: 30px; padding-left: 30px;"></td></tr>
+                            <tr><td>Profile</td></tr>
+                        </table>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
+    <div class="content">
+        <div class="container">
+
+        </div>
+    </div>
 </body>
 </html>
